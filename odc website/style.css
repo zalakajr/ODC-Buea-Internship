@@ -1,0 +1,218 @@
+:root{
+    --main-color:black;
+    --sec-color:orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+   
+    width: 90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: var(--main-color);
+    padding: .8rem;
+}
+
+.navbar h1{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+li{
+    list-style: none;
+    margin-left: 3rem;
+    text-transform: capitalize;
+}
+
+ul{
+    display:flex;
+    
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span, .active, .navbar a:hover, footer span{
+    color:var(--sec-color);
+}
+
+.hero
+{
+    background-color: var(--sec-color);
+    height: 400px;
+    display: flex;
+    text-align: center;
+}
+.hero h1, .hero p{
+
+    margin-bottom: 3rem;
+    
+}
+
+.hero h1{
+    text-transform: capitalize;
+    font-size: 30px;
+    
+}
+
+.hero p{
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero a{
+    background-color: black;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.hero a:hover{
+    opacity: .8;
+}
+
+/* start of about*/
+
+.about .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.about img{
+    width: 100%;
+}
+
+.about{
+    margin-top: 2rem;
+}
+
+.section-title{
+    text-transform: capitalize;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+
+}
+
+.section-title h1{
+    display: inline-block;
+    padding-bottom: .2rem;
+    border-bottom: 3px solid var(--sec-color);
+    font-size:25px;
+}
+
+.about p{
+    line-height: 1.5rem;
+    margin-bottom: .48rem;
+}
+/*start of what wedo*/
+
+.whatwedo{
+    background-color: var(--sec-color);
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    
+}
+.whatwedo .container{
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.whatwedo h1{
+    
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    font-size: 20px;
+    text-decoration: underline;
+}
+/*End of what we do*/
+
+/*form start*/
+.form .box{
+    background-color: var(--sec-color);
+    padding: 1rem;
+    
+    
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: .5rem;
+}
+.form h1{
+    margin-top: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--sec-color);
+    
+}
+.form label{
+    display: block;
+}
+.form input, .form textarea{
+    width: 100%;
+}
+
+/* footer*/
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.about-foot{
+
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 991px){
+
+
+.about .container{
+    display: block;
+    text-align: center;
+}
+.section-title{
+    text-align: center;
+}
+
+.navbar h1{
+    margin-bottom: 1rem;
+}
+
+.hero h1{
+    font-size: 25px;
+}
+
+.hero p{
+    font-size: 15px;
+}
+
+.hero a{
+    padding:.5rem;
+}
+.about .container{
+    display:block;
+}
+}
